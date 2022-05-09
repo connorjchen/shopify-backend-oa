@@ -33,6 +33,7 @@ deletions = [
 
 id_count = 5
 
+@app.route('/', methods=['GET', 'POST', 'PATCH', 'DELETE'])
 @app.route('/api/inventory/', methods=['GET', 'POST', 'PATCH', 'DELETE'])
 def process_inventory_request():
   if (request.method == 'GET'):
